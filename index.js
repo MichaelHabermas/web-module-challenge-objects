@@ -48,8 +48,15 @@ Using the burger object below do the following:
 export const burger = {
 	name: 'Burger',
 	price: 18,
-	category: 'Lunch'
+	category: 'Lunch',
 	/*Your code here*/
+	discount: function (str) {
+		if (str == 'teacher' || str == 'student') {
+			return this.price * 0.75;
+		} else {
+			return this.price * 0.9;
+		}
+	}
 };
 
 ///////////////Reviews (MVP)///////////////////
@@ -88,7 +95,8 @@ const reviews = [
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
-*/
+  */
+// console.log(reviews.name['Julius'].feedback);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Using the reviews array above do the following: (no function needed) 
