@@ -120,8 +120,8 @@ Use the getReviewByIndex function below to do the following:
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 */
 
-function getReviewByIndex(/*Your code here*/) {
-	/*Your code here*/
+function getReviewByIndex(arr, i) {
+	return `${arr[i].name} gave the restaurant a ${arr[i].rating} star review, and their feedback was: ${arr[i].feedback}`;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -135,8 +135,9 @@ Use the getLastReview function below to do the following:
   For example: getLastReview(reviews) would return: "Reyna gave the restaurant a 3.5 star review, and their feedback was: this place is chill with really cool people, great for getting work done on weekdays".
 */
 
-function getLastReview(/*Your code here*/) {
-	/*Your code here*/
+function getLastReview(objArr) {
+	let last = objArr[objArr.length - 1];
+	return `${last.name} gave the restaurant a ${last.rating} star review, and their feedback was: ${last.feedback}`;
 }
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
